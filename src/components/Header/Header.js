@@ -8,7 +8,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
 import logoWithText from './../../assets/logo-with-text.png'
 
 const Header = () => (
-    <header className="Header d-flex justify-content-around p-4 items-center">
+    <header className="Header flex justify-around p-4 items-center">
         <div>
             <Link to="/" className="text-black no-underline font-semibold">
                 <img src={logoWithText} width={150} />

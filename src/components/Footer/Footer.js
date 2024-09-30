@@ -15,18 +15,18 @@ const Footer = () => (
                 <div className="flex flex-col w-2/12 items-start">
                     <p className="text-subtext text-sm font-semibold mb-12">Links</p>
                     <ul className="p-0 items-start">
-                        <li className="text-left mb-4"><Link to="/" className="text-black hover:underline font-semibold text-sm no-underline mb-4 text-left">Home</Link></li>
-                        <li className="text-left mb-4"><Link to="/shop" className="text-black hover:underline font-semibold text-sm no-underline mb-4 text-left">Shop</Link></li>
-                        <li className="text-left mb-4"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-4 text-left">About</Link></li>
-                        <li className="text-left mb-4"><Link to="/contact" className="text-black hover:underline font-semibold text-sm no-underline mb-4 text-left">Contact</Link></li>
+                        <li className="text-left mb-8"><Link to="/" className="text-black hover:underline font-semibold text-sm no-underline mb-8 text-left">Home</Link></li>
+                        <li className="text-left mb-8"><Link to="/shop" className="text-black hover:underline font-semibold text-sm no-underline mb-8 text-left">Shop</Link></li>
+                        <li className="text-left mb-8"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-8 text-left">About</Link></li>
+                        <li className="text-left mb-8"><Link to="/contact" className="text-black hover:underline font-semibold text-sm no-underline mb-8 text-left">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="flex flex-col w-2/12 items-start">
                     <p className="text-subtext text-sm font-semibold mb-12">Help</p>
                     <ul className="p-0 items-start">
-                        <li className="text-left mb-4"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-4 text-left">Payment Options</Link></li>
-                        <li className="text-left mb-4"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-4 text-left">Returns</Link></li>
-                        <li className="text-left mb-4"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-4 text-left">Privacy Policies</Link></li>
+                        <li className="text-left mb-8"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-8 text-left">Payment Options</Link></li>
+                        <li className="text-left mb-8"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-8 text-left">Returns</Link></li>
+                        <li className="text-left mb-8"><Link to="#" className="text-black hover:underline font-semibold text-sm no-underline mb-8 text-left">Privacy Policies</Link></li>
                     </ul>
                 </div>
                 <div className="flex flex-col w-4/12 items-start">

@@ -1,1 +1,4 @@
-.Home {}
+.Home {
+    background-image: url('../../assets/hero.png');
+    object-fit: contain;
+}
