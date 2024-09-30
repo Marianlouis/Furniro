@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
+import Layout from "./components/Layout/Layout";
+import Home from "./components/Home/Home";
+import Product from "./components/Product/Product";
+import Contact from "./components/Contact/Contact";
+import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
+import Shop from "./components/Shop/Shop";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let routes = createBrowserRouter([
+        {
+            path: '/',
+            element: <Layout />,
+            children: [
+                { index: true, element: <Home /> },
+                { path: "contact", element: <Contact /> },
+                { path: "checkout", element: <Checkout /> },
+                { path: "cart", element: <Cart /> },
+                { path: "shop", element: <Shop /> },
+                { path: "product/:id", element: <Product /> },
+            ]
+        },
+        { path: "*", element: <NotFound /> }
+    ])
+    return (
+        <div className="App">
+            <RouterProvider router={routes}></RouterProvider>
+        </div>
+    );
 }
 
 export default App;
