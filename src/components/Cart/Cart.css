@@ -1,1 +1,7 @@
 .Cart {}
+
+.title-bg {
+    background-image: url("../../assets/title.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
