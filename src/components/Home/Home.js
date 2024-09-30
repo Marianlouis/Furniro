@@ -1,15 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Home.css';
+import hero from "./../../assets/hero.png"
 
 const Home = () => (
-  <div className="Home">
-    Home Component
-  </div>
+    <div className="Home">
+        <img src={hero} alt="Hero" className="w-full h-dvh" />
+    </div>
 );
-
-Home.propTypes = {};
-
-Home.defaultProps = {};
 
 export default Home;
