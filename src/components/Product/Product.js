@@ -1,15 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Product.css';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
-const Product = () => (
-  <div className="Product">
-    Product Component
-  </div>
-);
+function Product() {
+    const [product, setProduct] = useState([]);
 
-Product.propTypes = {};
-
-Product.defaultProps = {};
+    return (
+        <div className="Product">
+            Product Component
+        </div>
+    );
+}
 
 export default Product;

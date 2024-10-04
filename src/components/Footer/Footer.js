@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => (
     <footer className="Footer border-t-gray-200 border-t-2 p-4 mt-4">
         <div className="w-11/12 mx-auto">
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-8">
                 <div className="flex flex-col w-4/12 items-start">
                     <p className="font-bold mb-12 text-2xl">Furniro.</p>
                     <p className="text-subtext text-sm text-left">400 University Drive Suite 200 Coral <br /> Gables, <br />

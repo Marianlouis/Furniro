@@ -12,7 +12,7 @@ const Hero = () => (
                 <h2 className="text-5xl text-left font-bold text-primary">Discover Our <br />New Collection</h2>
                 <p className="text-left font-semibold mt-2 p-1 pr-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
             </div>
-            <button className="bg-primary px-16 py-4 text-white font-semibold"> BUY NOW </button>
+            <button className="bg-primary px-16 py-4 text-white font-semibold hover:underline underline-offset-4 "> BUY NOW </button>
         </div>
     </div>
 );
