@@ -43,7 +43,7 @@ function Products() {
                             <p className="text-slate-700 font-bold text-lg text-left col-span-1">${product.price.toFixed(2)}</p>
                         </div>
                         <div className="w-full h-full top-0 left-0 absolute hidden group-hover:flex flex-col justify-center items-center gap-4 bg-opacity-50 bg-black">
-                            <button className='bg-white font-bold text-lg px-16 py-4 text-primary w-fit mx-auto'>Add to Cart</button>
+                            <button className='hover:bg-primary hover:text-white bg-white font-bold text-lg px-16 py-4 text-primary w-fit mx-auto'>Add to Cart</button>
                             <div className="flex gap-2 text-lg text-white font-bold justify-between w-full px-6">
                                 <button className="gap-1 flex items-center justify-center"><ShareIcon />Share</button>
                                 <button className="gap-1 flex items-center justify-center"><CompareArrowsIcon />Compare</button>
