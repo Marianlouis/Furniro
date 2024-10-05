@@ -5,6 +5,7 @@ import axios from 'axios';
 import ShareIcon from '@mui/icons-material/Share';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { Link } from 'react-router-dom';
 
 function Products() {
     const [products, setProducts] = useState([]);
@@ -25,7 +26,7 @@ function Products() {
             <h2 className="text-center font-bold text-3xl">Our Products</h2>
             <div className="mt-12 grid grid-cols-4 gap-6 justify-center px-12">
                 {products.slice(0, productCount).map((product) => (
-                    <div className="group grid grid-cols-1 gap-4 border relative" key={product.id}>
+                    <Link to={`product/${product.id}`} className="group grid grid-cols-1 gap-4 border relative" key={product.id}>
                         <div className="col-span-1 w-full aspect-square relative">
                             <img src={product.image} className="h-full w-full object-contain rounded-xl" alt={product.title} />
                             <div className="absolute top-4 right-4 bg-teal-400 w-fit aspect-square rounded-full text-white p-2 flex items-center">
@@ -45,7 +46,7 @@ function Products() {
                                 <button className="gap-1 flex items-center justify-center"><FavoriteBorderIcon />Like</button>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))
                 }
             </div >

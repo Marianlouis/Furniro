@@ -11,6 +11,7 @@ import TuneIcon from '@mui/icons-material/Tune';
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 import CropLandscapeIcon from '@mui/icons-material/CropLandscape';
 import Features from '../Features/Features';
+import { Link } from 'react-router-dom';
 
 function Shop() {
     const [products, setProducts] = useState([]);
@@ -20,6 +21,7 @@ function Shop() {
         axios.get('https://fakestoreapi.com/products')
             .then((response) => setProducts(response.data))
             .catch(error => console.error(error));
+        console.log(products)
     }, []);
 
     return (
@@ -46,7 +48,7 @@ function Shop() {
             </div>
             <div className="my-12 grid grid-cols-4 gap-6 justify-center px-12">
                 {products.slice((page - 1) * 8, (page) * 8).map((product) => (
-                    <div className="group grid grid-cols-1 gap-4 border relative" key={product.id}>
+                    <Link to={`/product/${product.id}`} className="group grid grid-cols-1 gap-4 border relative" key={product.id}>
                         <div className="col-span-1 w-full aspect-square relative">
                             <img src={product.image} className="h-full w-full object-contain rounded-xl" alt={product.title} />
                             <div className="absolute top-4 right-4 bg-teal-400 w-fit aspect-square rounded-full text-white p-2 flex items-center">
@@ -66,7 +68,7 @@ function Shop() {
                                 <button className="gap-1 flex items-center justify-center"><FavoriteBorderIcon />Like</button>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))
                 }
             </div >
