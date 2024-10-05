@@ -50,7 +50,7 @@ function Header() {
                     onClick={toggleOverlay}
                 ></div>
             )}
-            <div className={`fixed top-0 right-0 h-full w-96 bg-white z-20 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed top-0 right-0 h-full w-96 bg-white z-20 transform transition-transform duration-300 flex flex-col justify-between ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="p-6 flex flex-col justify-between">
                     <div>
                         <div className="flex gap-2 justify-between items-start">
@@ -80,17 +80,21 @@ function Header() {
                             <button><CancelIcon className="text-subtext" /></button>
                         </div>
                     </div>
-                    <div className="flex flex-col">
+                </div>
+
+                <div>
+
+                    <div className="flex flex-col p-6">
                         <div className='flex text-left'>
                             <p className="w-1/2 text-lg">Subtotal</p>
                             <p className="w-1/2 text-lg font-bold text-primary">Rs. 520,000.00</p>
                         </div>
                     </div>
-                </div>
-                <div className="border-t-2 flex justify-evenly items-center py-6">
-                    <button className="border-2 rounded-full px-6 border-black py-1">Cart</button>
-                    <button className="border-2 rounded-full px-6 border-black py-1">Checkout</button>
-                    <button className="border-2 rounded-full px-6 border-black py-1">Comparison</button>
+                    <div className="border-t-2 flex justify-evenly items-center py-6">
+                        <Link to="/cart"><button className="border-2 rounded-full px-6 border-black py-1 hover:bg-black hover:text-white">Cart</button></Link>
+                        <Link to="/checkout"><button className="border-2 rounded-full px-6 border-black py-1 hover:bg-black hover:text-white">Checkout</button></Link>
+                        <button className="border-2 rounded-full px-6 border-black py-1 hover:bg-black hover:text-white">Comparison</button>
+                    </div>
                 </div>
             </div>
         </header>
