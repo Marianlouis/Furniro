@@ -12,12 +12,7 @@ function Products() {
 
     useEffect(() => {
         axios.get('https://fakestoreapi.com/products')
-            .then(
-                (response) => {
-                    setProducts(response.data);
-                    console.log(response.data);
-                }
-            )
+            .then((response) => setProducts(response.data))
             .catch(error => console.error(error));
     }, []);
 
