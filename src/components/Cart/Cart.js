@@ -5,6 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Features from '../Features/Features';
 import asgaard from "../../assets/asgaard-sofa.png"
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Link } from 'react-router-dom';
 
 const Cart = () => (
     <div className="Cart">
@@ -48,7 +49,7 @@ const Cart = () => (
                     <p className="font-semibold">Total</p>
                     <p className="font-semibold text-lg text-primary">Rs. 250,000.00</p>
                 </div>
-                <button className="px-8 py-3 hover:bg-primary hover:text-white hover:border-white mb-16 border-2 text-xl rounded-xl border-black">Check Out</button>
+                <Link to="/checkout"><button className="px-8 py-3 hover:bg-primary hover:text-white hover:border-white mb-16 border-2 text-xl rounded-xl border-black">Check Out</button></Link>
             </div>
         </div>
         <Features />
